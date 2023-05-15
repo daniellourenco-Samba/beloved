@@ -17,6 +17,11 @@ function App() {
       setrazoes(data);
   }
 
+  const limpar = () => {
+      setrazoes([]);
+  }
+
+
   return (
     <div className="App">
      <h1>Aqui será o app</h1>
@@ -27,6 +32,7 @@ function App() {
         ))}
       </ul>
       <button onClick={click}>Clique aqui</button>
+      <button onClick={limpar}>Limpar</button>
     </div>
   );
 }
