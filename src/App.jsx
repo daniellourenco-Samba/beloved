@@ -4,8 +4,8 @@ import img1 from './data/foto1.png'
 
 function App() {
 
-  const url = "https://gift-repo-eurawdqtt-daniellotorres.vercel.app/razoes";  
-  const [razoes, setrazoes] = useState([]);
+  const url = "https://apiu-daniellotorres.vercel.app/";  
+  const [razao, setRazao] = useState([]);
 
 
   const click = 
@@ -14,23 +14,19 @@ function App() {
       const res = await fetch(url);
 
       const data = await res.json();
-      setrazoes(data);
+      setRazao(data);
   }
 
   const limpar = () => {
-      setrazoes([]);
+      setRazao([]);
   }
 
 
   return (
     <div className="App">
      <h1>Aqui será o app</h1>
-      <img src={img1} alt="imagem1" />
-      <ul>
-        {razoes.map((razao) => (
-          <li key={razao.id}>{razao.texto}</li>
-        ))}
-      </ul>
+      <h2>Eu te amo porque</h2>
+      <h2>{razao}</h2>
       <button onClick={click}>Clique aqui</button>
       <button onClick={limpar}>Limpar</button>
     </div>
