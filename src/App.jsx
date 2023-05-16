@@ -1,33 +1,36 @@
 import { useState } from 'react';
 import './App.css';
-import img1 from './data/foto1.png'
+import axios from "axios";
 
 function App() {
 
+  const [i, setI] = useState(0)
   const url = "https://apiu-daniellotorres.vercel.app/";  
   const [razao, setRazao] = useState([]);
 
 
-  const click = 
-    async function fetchData() {
-      console.log('buscando')
-      const res = await fetch(url);
+  const mudaRazao = async () => {
+      await axios({
+          method: "get",
+            url: url
+          }).then(function (response) {
+            setRazao(response.data)
+          });
+      i < 12 ? setI(i + 1) : setI(i)
+    }
 
-      const data = await res.json();
-      setRazao(data);
-  }
 
   const limpar = () => {
       setRazao([]);
   }
-
+  
+  setInterval(mudaRazao, 1 * 3 * 1000 )
 
   return (
     <div className="App">
      <h1>Aqui será o app</h1>
       <h2>Eu te amo porque</h2>
-      <h2>{razao}</h2>
-      <button onClick={click}>Clique aqui</button>
+      <h2>{razao.texto}</h2>
       <button onClick={limpar}>Limpar</button>
     </div>
   );
