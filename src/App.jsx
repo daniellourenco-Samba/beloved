@@ -4,35 +4,38 @@ import axios from "axios";
 
 function App() {
 
-  const [i, setI] = useState(0)
   const url = "https://apiu-daniellotorres.vercel.app/";  
   const [razao, setRazao] = useState([]);
 
 
-  const mudaRazao = async () => {
+  const carregaRazao = async () => {
+      console.log('requisitando' + url)
       await axios({
           method: "get",
             url: url
           }).then(function (response) {
             setRazao(response.data)
           });
-      i < 12 ? setI(i + 1) : setI(i)
-    }
+      console.log(razao);
+  }
 
 
   const limpar = () => {
       setRazao([]);
   }
   
-  setInterval(mudaRazao, 1 * 3 * 1000 )
+  setInterval(carregaRazao, 30 * 1000 )
 
   return (
     <div className="App">
-     <h1>Aqui será o app</h1>
-      <h2>Eu te amo porque</h2>
-      <h2>{razao.texto}</h2>
-      <button onClick={limpar}>Limpar</button>
-    </div>
+      <div className="card">
+        <h2>texto estara aqui</h2>
+        <h2>{razao.Num}</h2>
+        <h2>{razao.Reason}</h2>
+        <button onClick={carregaRazao}></button>
+        <button onClick={limpar}>Limpar</button>
+      </div>
+  </div>
   );
 }
 
