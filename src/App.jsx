@@ -32,6 +32,7 @@ function App() {
         <h2>Eu te amo porque</h2>
         <h2>{razao.Reason}</h2>
       </div>
+      <button onClick={carregaRazao}></button>
   </div>
   );
 }
