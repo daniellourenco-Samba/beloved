@@ -9,31 +9,28 @@ function App() {
 
 
   const carregaRazao = async () => {
-      console.log('requisitando' + url)
+      setRazao([])
       await axios({
           method: "get",
             url: url
           }).then(function (response) {
-            setRazao(response.data)
+            let dado = response.data
+            carregaDadoNaTela(dado)
           });
-      console.log(razao);
   }
 
-
-  const limpar = () => {
-      setRazao([]);
+  const carregaDadoNaTela = (dado)=>{
+    setTimeout(2000)
+    setRazao(dado)
   }
   
-  setInterval(carregaRazao, 30 * 1000 )
+  setInterval(carregaRazao, 4200000)
 
   return (
     <div className="App">
       <div className="card">
-        <h2>texto estara aqui</h2>
-        <h2>{razao.Num}</h2>
+        <h2>Eu te amo porque</h2>
         <h2>{razao.Reason}</h2>
-        <button onClick={carregaRazao}></button>
-        <button onClick={limpar}>Limpar</button>
       </div>
   </div>
   );
