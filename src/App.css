@@ -8,16 +8,6 @@
   flex-direction: column;
 }
 
-button{
-  width: 110px;
-  background-color: #2646ae;
-  color: #fff;
-  margin: 5px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
-}
-
 
 .App-header {
   background-color: #282c34;
@@ -31,7 +21,8 @@ button{
 }
 
 body {
-  background-color: #f0e2c5c3; /* Fundo vermelho claro */
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,70,107,1) 100%);
   margin: 0;
   color: white;
 }
