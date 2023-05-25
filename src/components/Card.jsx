@@ -12,7 +12,7 @@ const Card = (props) => {
     setRazao([])
     let infos = document.querySelector('.card')
     infos.innerHTML = 
-    `<h1>Você é incrivelmente bondosa, tenho orgulho disso!</h1>`
+    `<h1>Você me inspira a cada dia!</h1>`
     await axios({
         method: "get",
           url: url
