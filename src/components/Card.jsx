@@ -12,20 +12,7 @@ const Card = (props) => {
     setRazao([])
     let infos = document.querySelector('.card')
     infos.innerHTML = 
-    ` <h1>Shed a tear 'cause I'm missing you
-I'm still alright to smile
-Girl, I think about you every day now
-Was a time when I wasn't sure
-But you set my mind at ease
-There is no doubt you're in my heart now
-
-Said: Woman, take it slow
-And it'll work itself out fine
-All we need is just a little patience
-Said: Sugar, make it slow
-And we'll come together fine
-All we need is just a little patience
-Patience</h1>`
+    ` <h1>Sua risada. HIHIHIHI muito fofa</h1>`
     
     await axios({
         method: "get",
@@ -39,7 +26,7 @@ Patience</h1>`
     <div>
         <div className="card" onClick={(e) => {carregaRazao()}}>
             <h2>Oi Mo!</h2>
-            <h2>Oiva una musga...</h2>
+            <h2>Uma coisa que eu amo em você é...</h2>
         </div>
     </div>
   )
