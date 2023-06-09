@@ -2,7 +2,7 @@ import './App.css';
 import Logo from './data/logo.svg'
 
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './components/home/Home'
 import Card from './components/card/Card'

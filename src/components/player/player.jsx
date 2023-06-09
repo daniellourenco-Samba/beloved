@@ -6,7 +6,7 @@ const Player = ()=> {
 
   const musga = {
     "title": "AI MEU DEUS COMO EU TE AMO MO!",
-    "url" : "https://freetouse.com/data/mp3/shandr-drifting-away.mp3"   
+    "url" : "https://www.dropbox.com/s/y4jsjipohekbdjx/music.mp3?dl=0"   
   }
 
   const clickRef = useRef();
