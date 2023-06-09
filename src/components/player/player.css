@@ -18,7 +18,8 @@
     }
 
     .title{
-        font-size: inherit;
+        font-size: 14px;
+        font-weight: bold;
     }
     .navigation{
         width: 100%;
@@ -42,7 +43,8 @@
         }
     }
     .controls{
-        font-size: inherit;
+        font-size: 14px;
+        font-weight: bold;
         display: flex;
         align-items: center;
 
@@ -60,7 +62,8 @@
         
         .pp
         {
-            font-size: 4rem;
+            font-size: 14px;
+            font-weight: bold;
             
         }
         
