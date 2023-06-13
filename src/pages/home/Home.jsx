@@ -6,9 +6,9 @@ const Home = () => {
   const navigate = useNavigate()
     
   return (
-    <div className="card" onClick= {() => navigate('/music')} >
+    <div className="card" onClick= {() => navigate('/photos')} >
             <h2>Oi Mo!</h2>
-            <h2>Ainda pensando em você ouvindo essa direto...</h2>
+            <h2>Oia, uma fotinha favorita minha para cada mês nosso junto...</h2>
     </div>
   )
 }
