@@ -32,9 +32,9 @@ const Gallery = () => {
     <div className='gallery'> 
         <Carousel  dynamicHeight infiniteLoop autoPlay swipeableswipeable> 
           {images.map(image => (
-            <div key={image.src}>
+            <div key={image.src} className='item'>
+              <h4 className='legenda'>{image.label}</h4>
               <img src={image.src} alt='Falha ao carregar'/>
-              <p className="legend">{image.label}</p>
             </div>
           ))}
         </Carousel>
