@@ -1,27 +1,43 @@
-import React from 'react'
-import { motion } from 'framer-motion'  
+import React from 'react'  
 import './Gallery.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-import image1 from '../../data/image1.jpg'
-import image2 from '../../data/image2.jpg'
-import image3 from '../../data/image3.png'
-import image4 from '../../data/image4.jpg'
-import image5 from '../../data/image5.jpeg'
+import outubro from '../../data/outubro.jpg'
+import novembro from '../../data/novembro.jpg'
+import dezembro from '../../data/dezembro.jpg'
+import janeiro from '../../data/janiero.jpg'
+import fevereiro from '../../data/fevereiro.jpg'
+import marco from '../../data/marco.jpg'
+import abril from '../../data/abril.jpg'
+import maio from '../../data/maio.jpg'
+import junho from '../../data/junho.jpg'
 
-const images = [image1, image2, image3, image4, image5]
+
+
+const images = [ 
+  {src : outubro , label  : 'Nosso primeiro date'},
+  {src : novembro , label  : 'Primeira noite juntos ;-;'},
+  {src : dezembro , label  : 'A copa que só valeu a pena pq torci com oce'},
+  {src : janeiro , label  : 'O casal mais elegante do mundo!'},
+  {src : fevereiro , label  : 'Nosso colaçãozinho'},
+  {src : marco , label  : 'Aqui já estávamos 6 meses nos vendo O.O'},
+  {src : abril , label  : 'Os melhores jantares são ao seu lado'},
+  {src : maio , label  : 'O dia da sua suplesa hehehe'},
+  {src : junho , label  : 'Oce fazeno meu cabelin do jeitinho que só você sabe ^^'}
+ ]
 
 const Gallery = () => {
   return (
     <div className='gallery'> 
-        <motion.div className='carousel'>
-            <motion.div className='inner-carousel'>
-                {images.map(image => (
-                    <motion.div key={image} className='item'>
-                      <img src={image} alt='alt'/>
-                    </motion.div>
-                ))}
-            </motion.div>
-        </motion.div>
+        <Carousel  dynamicHeight infiniteLoop autoPlay swipeableswipeable> 
+          {images.map(image => (
+            <div key={image.src}>
+              <img src={image.src} alt='Falha ao carregar'/>
+              <p className="legend">{image.label}</p>
+            </div>
+          ))}
+        </Carousel>
     </div>
   )
 }
