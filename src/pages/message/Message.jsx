@@ -6,7 +6,7 @@ const Message = (props) => {
 
   return (
     <div className='card'>
-        <h1>Por você não me abandonar, nem nos piores momentos</h1>
+        <h1>Pela luz que você me traz, você me ilumina!</h1>
     </div>
   )
 }
