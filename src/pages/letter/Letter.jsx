@@ -26,7 +26,7 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Oi meu amorzinho! Eu te amo muito! Fiz essa cartinha para agradecer por ter me apoiado tanto esses dias. Também estarei sempre aqui para você, mo! SIM, agora serão cartinhas, pois sei que você gosta mais rsrsr</p>
+          <p>Sua eloquencia!</p>
           <p>TIAMO!</p>
         </div>
       </div>
