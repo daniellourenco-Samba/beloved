@@ -9,10 +9,8 @@ const Letter = () => {
     }
 
     const fecharCarta = () =>{
-        document.querySelector('.letter').classList.add('letter--close');
-      setTimeout(function(){
-        document.querySelector('.letter').classList.remove('letter--close');
-      }, 600);
+      document.querySelector('.letter').classList.remove('letter--open');
+      document.querySelector('.letter').classList.add('letter--close');
     }
 
     
@@ -26,7 +24,7 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Sua eloquencia!</p>
+          <p>Suas (nossas) bobeiras hihihi</p>
           <p>TIAMO!</p>
         </div>
       </div>
