@@ -1,12 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Player.css';
 import {BsFillPlayCircleFill, BsFillPauseCircleFill} from 'react-icons/bs';
+import sound from '../../assets/som.mp3'
 
 const Player = ()=> {
 
   const musga = {
-    "title": "AI MEU DEUS COMO EU TE AMO MO!",
-    "url" : "https://www.dropbox.com/s/y4jsjipohekbdjx/music.mp3?dl=0"   
+    "title": "WILL ?",
+    "url" : "https://www.dropbox.com/scl/fi/83fm3519g5c5ckrlq02c4/Black-Alien-Como-Eu-Te-Quero.mp3?dl=0&rlkey=mdzhseb5k5k79dievzhggsgmh"   
   }
 
   const clickRef = useRef();
@@ -50,7 +51,7 @@ const Player = ()=> {
 
   return (
     <div className='player_container'>
-      <audio src={song.url} ref={audioElem} onTimeUpdate={onPlaying} />  
+      <audio src={sound} ref={audioElem} onTimeUpdate={onPlaying} />  
       <div className="title">
         <p>{song.title}</p>
       </div>
