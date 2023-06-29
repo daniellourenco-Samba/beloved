@@ -6,7 +6,7 @@ import sound from '../../assets/som.mp3'
 const Player = ()=> {
 
   const musga = {
-    "title": "WILL ?",
+    "title": "Sunshine in all my days",
     "url" : "https://www.dropbox.com/scl/fi/83fm3519g5c5ckrlq02c4/Black-Alien-Como-Eu-Te-Quero.mp3?dl=0&rlkey=mdzhseb5k5k79dievzhggsgmh"   
   }
 

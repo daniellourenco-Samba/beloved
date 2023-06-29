@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="card" onClick= {() => navigate('/player')} >
             <h2>Oi Mo!</h2>
-            <h2>Ouça una musga i mi responda...</h2>
+            <h2>Oce é my sunshine in a cloudy day</h2>
     </div>
   )
 }
