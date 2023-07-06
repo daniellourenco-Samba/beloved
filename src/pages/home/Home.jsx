@@ -6,9 +6,9 @@ const Home = () => {
   const navigate = useNavigate()
     
   return (
-    <div className="card" onClick= {() => navigate('/player')} >
+    <div className="card" onClick= {() => navigate('/letter')} >
             <h2>Oi Mo!</h2>
-            <h2>Oce é my sunshine in a cloudy day</h2>
+            <h2>Una cosa que eu amo em oce...</h2>
     </div>
   )
 }
