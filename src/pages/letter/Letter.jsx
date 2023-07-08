@@ -24,10 +24,8 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Tu sorriso!</p>
-          <p>Tu cuerpo!</p>
-          <p>Tu voz!</p>
-          <p>TIQUIERO!</p>
+          <p>Você sempre me ouve e busca resolver tudo no dialogo mais lidno do mundo!</p>
+          <p>TEAMO MO</p>
         </div>
       </div>
     </div>
