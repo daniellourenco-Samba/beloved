@@ -24,8 +24,8 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Você sempre me ouve e busca resolver tudo no dialogo mais lidno do mundo!</p>
-          <p>TEAMO MO</p>
+          <p>Feliz dia 12 mozinho!!</p>
+          <p>Sou muito feliz por te ter ao meu lado. Quero que nossos dias 12 sejam infinitos e eternos. Eu te amo muito, te quero para sempre. Te amo mais que onti e menos que amanhã!</p>
         </div>
       </div>
     </div>
