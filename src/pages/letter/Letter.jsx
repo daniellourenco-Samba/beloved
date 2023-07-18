@@ -1,5 +1,6 @@
 import React from "react";
 import './Letter.css'
+import image1 from '../../data/aaaa.JPG'
 
 const Letter = () => {
     
@@ -24,8 +25,7 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Seu cheirinho</p>
-          <p>Durmo a semana toda com ele no travesseiro e fico morrendo de sodade!</p>
+          <img src={image1} alt="" style={{"width" : "200px"}} />
         </div>
       </div>
     </div>
