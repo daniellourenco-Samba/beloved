@@ -25,7 +25,8 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <img src={image1} alt="" style={{"width" : "200px"}} />
+          <p>Amo o seu crescimento, é gratificante assistir de pertinho. Te amo muito, tenho orgulho de você!</p>
+          <p>sabia ?</p>
         </div>
       </div>
     </div>
