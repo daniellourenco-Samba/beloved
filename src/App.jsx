@@ -2,7 +2,7 @@ import './App.css';
 import Logo from './data/logo.svg'
 
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/home/Home'
 import Message from './pages/message/Message'
@@ -15,7 +15,8 @@ import Letter from './pages/letter/Letter'
 function App() {
   return (
     <div className="App">
-      <img src={Logo} alt="Beloved." className='logo'/>
+      <a href="/">
+      <img src={Logo} alt="Beloved." className='logo'/></a>
        <BrowserRouter>
          <Routes>
           <Route path='/' element={<Home/>}></Route>
