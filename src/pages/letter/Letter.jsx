@@ -25,7 +25,10 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Sua personalidade!</p>
+          <p>O jeito que você sorri para mim parecendo que nem namoramos.</p>
+          <p>O mesmo sorriso da primeira vez, o mesmo sorriso que me conquistou</p>
+          <p>O memso sorriso que eu quero ver no dia que casarmos</p>
+          <p>Te amo, minha noivinha!</p>
         </div>
       </div>
     </div>
