@@ -7,7 +7,7 @@ const Home = () => {
     
   return (
     <div className="card" onClick= {() => navigate('/letter')} >
-            <h2>Eu amo...</h2>
+            <h2>Oiiii mozinhoooo</h2>
     </div>
   )
 }

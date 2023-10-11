@@ -25,7 +25,7 @@ const Letter = () => {
       <div className="paper">
         <div className="paper-content">
           <div className="paper-close" onClick={(e) => {fecharCarta()}}>x</div>
-          <p>Eu amo muito nossos dias, nossa rotina, nossos rituais, amo nós, amo te amar!</p>
+          <p>Só queria te dizer que to morrendo de saudade. Desculpa nao manter a frequencia aqui, agora manterei, prometo! Eu te amo muito, e amo demonstrear mi amor por ioce. Sexta tenho suplesa rsrs!</p>
         </div>
       </div>
     </div>
