@@ -9,6 +9,7 @@ import Message from './pages/message/Message'
 import Player from './pages/player/Player'
 import Gallery from './pages/gallery/Gallery'
 import Letter from './pages/letter/Letter'
+import Admin from './pages/admin/Admin'
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/player' element={<Player/>}></Route>
           <Route path='/photos' element={<Gallery/>}></Route>
           <Route path='/letter' element={<Letter/>}></Route>
+          <Route path='/adm' element={<Admin/>}></Route>
          </Routes>
        </BrowserRouter>
   </div>
