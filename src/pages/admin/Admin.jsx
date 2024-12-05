@@ -1,10 +1,20 @@
 import React from 'react'
 import './Admin.css'
 import { useState } from 'react'
+import axios from 'axios'
 
 const Admin = () => {
 
   const [opt, setOpt] = useState('msg')
+
+  const handleSave = async() => {
+    try {
+      await axios.get("https://kcsbjxukps3wy6qikqz2u32egm0eqakn.lambda-url.us-east-1.on.aws/")
+      alert('Request successful')
+    } catch (error) {
+      console.error('Error during request:', error)
+    }
+  }
 
   return (
     <div className='adm'>
@@ -22,7 +32,7 @@ const Admin = () => {
 
       </div>
  
-
+      <button onClick={handleSave}>Save and Send</button>
     </div>
   )
 }
